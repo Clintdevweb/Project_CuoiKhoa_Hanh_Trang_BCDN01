@@ -1,0 +1,100 @@
+.sliderAbout {
+    background-image: url(../../Assets/Img/imgSlider/bgAbout.png);
+    background-position: center;
+    padding: 150px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sliderContentAbout {
+    text-align: center;
+    padding: 50px;
+}
+
+.sliderContentAbout > h6 {
+    color: var(--colorSPrimary);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.sliderContentAbout p {
+    font-size: 18px;
+    color: var(--colorWhite);
+}
+
+.sliderContentAbout .titleSliderAbout {
+    color: var(--colorGlobal);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* About Intro */
+.AboutItem {
+    padding: 50px;
+}
+
+.AboutItem .bgAboutBlue {
+    background: url(../../Assets/Img/imgAbout/solutions-hero-royalBlue-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.AboutItem .bgAboutGreen {
+    background: url(../../Assets/Img/imgAbout/solutions-hero-green-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.AboutItem img {
+    width: 100%;
+    height: 100%;
+    height: 382px;
+    object-fit: contain;
+    border-radius: 30%;
+}
+
+.AboutItem h6 {
+    text-transform: uppercase;
+    color: var(--colorGlobal);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.AboutItem h5 {
+    color: #012025;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.AboutItem p {
+    line-height: 2.2;
+    color: var(--colorTextCard);
+}
+
+.AboutItem p::first-letter {
+    font-size: calc(60px + 0.75vw);
+    line-height: 40px;
+    color: indianred;
+    float: left;
+    padding-top: 10px;
+    padding-right: 5px;
+    font-family: Sansita One;
+}
+
+/* Mobie */
+@media screen and (max-width: 46.1875em) {
+    .reAboutItem {
+        flex-direction: column-reverse;
+    }
+    .About .AboutItem {
+        padding: 20px 50px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+}

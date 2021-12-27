@@ -1,0 +1,330 @@
+/* info Left */
+.infoPageContent {
+    padding: 50px;
+}
+
+.infoLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 500px;
+}
+
+.infoLeft img {
+    /* width: 100%; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.infoLeft * {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.btnInfo {
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--colorWhite);
+    background-color: var(--colorGlobal);
+    border: none;
+}
+
+/* Info Right */
+.infoRight {
+}
+
+.tab {
+    overflow: hidden;
+}
+
+.tab .tabLink {
+    cursor: pointer;
+    color: var(--colorWhite);
+    border: none;
+    border-top: 2px solid transparent;
+    background-color: var(--colorGlobal);
+    outline: none;
+    padding: 14px 16px;
+    transition: all 0.3s;
+}
+
+.tab .tabLink:hover {
+    /* background-color:var(--colorSPrimary); */
+}
+
+.tab .tabLink.active {
+    background-color: var(--colorWhite);
+    color: var(--colorText);
+    border-top: 2px solid var(--colorGlobal);
+}
+
+.tabContent {
+    display: none;
+}
+.tabContent.active {
+    display: block;
+}
+
+.tabContent {
+    animation: fadeEffect 1s;
+}
+
+/* Modal update */
+.modal-content {
+    background: url(../../Assets/Img/imgCourse/hornor.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.modalUpdate {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalUpdateHeader {
+    color: var(--colorWhite);
+    padding: 10px 50px;
+}
+
+.modalUpdate h6 {
+    padding-top: 10px;
+    color: var(--colorWhite);
+}
+
+.modalUpdate form {
+    width: 100%;
+}
+
+.modalUpdate input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 2px solid var(--colorGlobal);
+    outline: none;
+}
+
+.modalUpdate .modal-footer {
+    border-top: none;
+}
+/* Btn */
+.btnSubmit {
+    background-color: var(--colorGlobal);
+    color: var(--colorWhite);
+    border: none;
+    padding: 10px;
+}
+
+.btnClose {
+    background-color: #dc3545;
+}
+
+/* css UserInfo */
+.userInfoTop {
+}
+
+.userInfoTop p {
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.userInfoTop p span {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--colorCardText);
+}
+
+.userInfoBot {
+    padding: 30px 0;
+}
+
+.userInfoBot h4 {
+    text-transform: uppercase;
+}
+
+.mySkill {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.skillAll {
+    padding-bottom: 20px;
+}
+.skillBtnCustom {
+    width: 60px;
+    height: 45px;
+    color: var(--colorWhite);
+    border-radius: 8px;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.progress {
+    width: 100%;
+}
+
+.skillBtnHtml button,
+.skillBtnHtml .progress-bar {
+    background-color: #f9ca9a;
+}
+
+.skillBtnCss button,
+.skillBtnCss .progress-bar {
+    background-color: #f8bebb;
+}
+
+.skillBtnJs button,
+.skillBtnJs .progress-bar {
+    background-color: #f0cc6b;
+}
+
+.skillBtnReact button,
+.skillBtnReact .progress-bar {
+    background-color: #113d3c;
+}
+
+.timeStudy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.timeStudyItem {
+    display: flex;
+    /* width: 135px; */
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 20px;
+    background: var(--colorGlobal);
+    color: var(--colorWhite);
+}
+
+/* Course User */
+.myCourseInfo {
+    padding: 20px 0;
+    min-height: 300px;
+}
+
+.myCourseItem {
+    margin: 30px 0;
+}
+.cardNet {
+    margin: 20px 0 0 0;
+    padding: 10px;
+    border: 2px solid #01877e;
+    border-radius: 8px;
+}
+
+.cardNetContent * {
+    margin-bottom: 5px;
+}
+
+.imgNet {
+    object-fit: fill;
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+}
+
+.iconNetCard span {
+    padding-right: 15px;
+}
+
+.iconStarNet i {
+    color: var(--colorSPrimary);
+}
+
+.imgNetFooter {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cancelNet {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.findCourseNet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.findCourseNet h6 {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+/* Css sweet Alert */
+.swal-modal {
+    width: 400px;
+}
+
+.swal-title:not(:first-child) {
+    padding-bottom: 13px;
+}
+
+.swal-title {
+    color: var(--colorGlobal);
+}
+
+.swal-text {
+    text-align: center;
+}
+
+/* Css modal hide scroll bar */
+.modal-open .modal::-webkit-scrollbar{
+    width: 0 !important;
+    display: none;
+}
+
+/* Mobie */
+@media screen and (max-width: 46.1875em) {
+    .infoLeft {
+        display: none;
+    }
+    .titleCourse > h3 {
+        font-size: 20px;
+    }
+    .tab .tabLink {
+        font-size: 14px;
+        padding: 15px 5px;
+    }
+    .imgNet {
+        object-fit: cover;
+    }
+    .modal-title{
+        font-size: 16px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    /* Css User Cousre */
+    .imgNet {
+        object-fit: cover;
+    }
+    
+}
+
+/* Effect tabs */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

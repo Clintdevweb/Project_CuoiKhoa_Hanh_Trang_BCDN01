@@ -1,0 +1,242 @@
+.detailCoures .titleCourse {
+    /* padding: 50px 100px; */
+}
+
+.detailCouresContent {
+    padding: 50px;
+}
+
+.detailCouresContent > h4{
+    text-transform: uppercase;
+}
+
+.detailCourseIntro {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+/* Course Title */
+.instrutorTitle {
+    padding: 0 5px;
+}
+
+.detailCourseIntro img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.detailCourseIntro i {
+    font-size: 35px;
+    color: var(--colorGlobal);
+}
+
+.detailCourseIntro p:nth-of-type(1) {
+    font-size: 14px;
+    color: var(--colorTextCard);
+}
+
+.reviewDetail {
+    text-align: right;
+}
+
+.reviewDetail span {
+    font-weight: 600;
+}
+
+.detailCourseIntro .reviewDetail i {
+    color: var(--colorSPrimary);
+    font-size: 20px;
+}
+
+.headDetailCourse {
+    padding: 30px 0;
+}
+
+.textDiscripts {
+    color: var(--colorTextCard);
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d0d0d0;
+    text-align: justify;
+}
+
+/* Box will learn */
+.boxCourseLearn {
+    padding: 20px 0;
+}
+.boxCourseLearn h6 {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.boxCourseLearn li {
+    padding: 5px 0;
+    text-align: justify;
+}
+
+.boxCourseLearn li i {
+    margin-right: 5px;
+    color: var(--colorSPrimary);
+}
+
+/* Course Content */
+.courseContent h6 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.courseDetailContent {
+    padding: 20px 0;
+}
+
+.courseDetailContent p {
+    padding: 0 10px;
+}
+
+.sectionCourse {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: var(--colorbgCourseDetail);
+}
+
+.btnPreview {
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid var(--colorGlobal);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--colorGlobal);
+    transition: all 0.5s;
+
+}
+
+.btnPreview:hover {
+    background-color: var(--colorGlobal);
+    color: var(--colorWhite);
+}
+
+.sectionCourse span {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+/* Lesson Content */
+.lessonContent {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 2px 1px rgb(239 244 190 / 27%);
+}
+
+.lessonContent span {
+    color: var(--colorTextCard);
+}
+
+.lessonContent span i {
+    color: var(--colorGlobal);
+    margin-right: 10px;
+}
+/* Courses Ralated */
+.coursesRelated {
+    padding: 20px 50px;
+}
+
+/* SiderBar */
+.sideBarCourseDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px ;
+    padding: 10px 30px;
+    box-shadow: 1px 1px 10px 4px rgb(218 218 218);
+
+}
+
+.sideBarCourseDetail img{
+    margin: 0 -20px;
+}
+
+.coursePrice{
+    padding: 30px 0;
+    text-align: right;
+    
+
+}   
+.coursePrice p{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.coursePrice p i{
+    margin-right: 10px;
+    color: #f6ba35;
+}
+
+/* sideBar Detail Content */
+.sideBarDetailContent ul li{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #f2f1f1;
+}
+
+.sideBarDetailContent ul li i{
+    font-size: 20px;
+    color: var(--colorSPrimary);
+}
+
+.formCoupon{
+    padding: 20px 0;
+}
+.formCoupon input{
+    width: 100%;
+    outline: none;
+    padding: 3px 10px;
+    border: 1px solid #d0d0d0;
+}
+
+.sideBarDetailContent ul li p{
+    color: var(--colorTextCard);
+}
+
+.sideBarDetailContent ul li p span{
+    color: var(--colorText);
+    font-weight: 500;
+
+}
+/* css time detail course */
+.lessonContent span:nth-of-type(2){
+    display: flex;
+    align-items: center;
+}
+
+/* Mobie */
+@media screen and (max-width: 46.1875em) {
+    .detailCourseIntro{
+        margin-bottom: 8px;
+    }
+    .detailCouresContent > .row{
+        flex-direction: column-reverse;
+    }
+    .titleDetailCourse{
+        padding: 10px 0;
+    }
+    .headDetailCourse{
+        padding: 5px 0 ;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .detailCourseIntro{
+        margin-bottom: 8px;
+    }
+}

@@ -1,0 +1,87 @@
+.titleCourse{
+    padding: 50px;
+    text-transform: uppercase;
+    background-color: #FFD60A;
+    color: var(--colorWhite);
+}
+
+.titleCourse p{
+    font-size: 13px;
+}
+
+.coursesContainer, .courseListPage{
+    padding: 50px;
+}
+
+.coursesBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+    height: 100%;
+    padding: 30px 20px;
+    text-align: center;
+
+}
+
+.coursesBoxItem{
+    padding: 0;
+}
+
+/* .coursesContainer .col-2 {
+    padding: 0;
+} */
+
+.coursesContainer .row {
+    margin: 0;
+}
+
+.bgStyle1{
+    background: #264653;
+}
+
+.bgStyle2{
+    background: #2A9D8F;
+}
+
+.bgStyle3{
+    background: #E9C46A;
+}
+
+.bgStyle4{
+    background: #F4A261;
+}
+
+.bgStyle5{
+    background: #EE8959;
+}
+
+.bgStyle6{
+    background: #E76F51;
+}
+
+.coursesBox h6{
+    padding-bottom: 10px;
+}
+
+.coursesBox i{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.coursesBox p{
+    font-size: 20px;
+}
+
+/* Course List */
+.courseListPage h6 {
+    font-size: 20px;
+}
+.courseListPage h6 i{
+    margin-right: 5px;
+    color: var(--colorTPrimary);
+    font-size: 20px;
+}
+

@@ -1,0 +1,358 @@
+.header {
+    z-index: 999;
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.headerFixed {
+    position: fixed;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    background-color: var(--colorWhite);
+    padding: 5px 50px;
+    transition: all 0.5s;
+    animation: fadeInDown ease-in 0.5s;
+}
+
+.headerLeft {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.headerRight {
+    display: flex;
+}
+
+.searchForm {
+    outline: none;
+    border: none;
+    width: 100%;
+    /* max-width: 300px; */
+    height: 40px;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-left: 15px;
+    background-image: url(/src/Assets/Img/imgHeader/search.png);
+    background-size: 30px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: rgb(245 245 245);
+}
+
+.searchForm:focus {
+    border: 2px solid var(--colorGlobal);
+    outline: none;
+}
+
+ul.menuHeader {
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    padding: 0px 8px;
+    justify-content: space-between;
+}
+
+ul.menuHeader li {
+    padding: 0 10px;
+}
+
+ul.menuHeader li a {
+    transition: all 0.5s;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--colorText);
+    text-transform: uppercase;
+}
+ul.menuHeader li:hover a,
+ul.menuHeader li:hover i {
+    color: var(--colorGlobal);
+}
+/* Text */
+.textE {
+    color: var(--colorGlobal);
+    font-size: 40px;
+}
+
+@font-face {
+    font-family: "fontPoppin";
+    src: url(../../Assets/Fonts/Poppins/Poppins-ExtraBold.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+/* Logo */
+.textLogo {
+    color: var(--colorText);
+    font-family: "fontPoppin";
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    transition: all 0.3s;
+    text-shadow: 5px -2px 3px #54d2c0;
+}
+
+.textLogo:hover {
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+
+.iconLogo {
+    right: 5px;
+    top: 15px;
+    position: absolute;
+}
+
+/* Text menu header */
+ul.menuHeader li a {
+    transition: all 0.25s ease-in-out;
+}
+ul.menuHeader li a:hover {
+    /* color: var(--colorGlobal); */
+}
+
+/* Header Cate */
+.courseCateList {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    z-index: 999;
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgb(1, 135, 126, 0.5);
+    transition: all 0.5s linear;
+    min-width: 200px;
+    transition: all 0.5s;
+}
+
+.courseCate::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+}
+.headerFixed .courseCateList {
+    top: 46px;
+}
+
+.courseCate {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.courseCate i {
+    padding-right: 3px;
+    transition: all 0.5s;
+}
+
+.courseCate,
+.eventHeader {
+    position: relative;
+}
+
+.courseCate .courseCateList li,
+.eventHeader .courseCateList li {
+    padding: 10px;
+}
+
+.menuHeader .courseCate .courseCateList li a,
+.menuHeader .eventHeader .courseCateList li a {
+    color: var(--colorText);
+}
+
+.menuHeader .courseCate .courseCateList li:hover a,
+.menuHeader .eventHeader .courseCateList li:hover a {
+    color: var(--colorWhite);
+}
+
+.courseCate:hover .courseCateList,
+.eventHeader:hover .courseCateList {
+    max-height: 400px;
+}
+
+.eventHeader:hover .courseCateList {
+    max-height: 400px;
+}
+
+/* Avatar */
+.avatar {
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.headerAvatar {
+    position: relative;
+    display: flex;
+}
+
+.headerSet a i {
+    color: var(--colorSPrimary);
+    font-size: 20px;
+    margin-right: 8px;
+    line-height: 50px;
+}
+
+.logout {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    z-index: 1;
+    transform: translateX(30px);
+    transition: all 0.5s;
+}
+
+.infoHeader:hover .logout {
+    transform: translateX(80px);
+}
+
+.logout i {
+    color: var(--colorSPrimary);
+}
+
+/* MenuMobie Header */
+.headerFixed .menuHeaderMobie{
+    top: 70px;
+}
+.menuMobie {
+    display: none;
+    position: relative;
+    font-size: 25px;
+}
+
+/* menuHeaderMobie */
+.menuHeaderMobie {
+    position: fixed;
+    width: 180px;
+    top: 80px;
+    right: 0;
+    transform: translateX(calc(100% + 50px));
+    background-color: rgb(1, 135, 126, 0.8);
+    animation: fadeInDown ease-in 0.5s;
+    transition: all 0.5s;
+}
+
+.menuHeaderMobie.active {
+    transform: translateX(0);
+}
+
+.menuMobie ul.menuHeaderMobie li{
+    padding: 5px;
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.menuMobie ul.menuHeaderMobie li a{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--colorText);
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.menuMobie ul.menuHeaderMobie li:hover a{
+    color: var(--colorWhite);
+}
+
+.menuMobie .menuHeaderMobie .courseCateMobie .courseCateListMobie li a,
+.menuMobie .menuHeaderMobie .eventHeaderMobie .courseCateListMobie li a {
+    color: var(--colorText);
+}
+
+.menuMobie .menuHeaderMobie .courseCateMobie .courseCateListMobie li:hover a,
+.menuMobie .menuHeaderMobie .eventHeaderMobie .courseCateListMobie li:hover a {
+    color: var(--colorWhite);
+}
+
+/* subMenuHeader */
+.courseCateListMobie{
+    position: absolute;
+    top: 20%;
+    left: calc(-100% - 20px);
+    z-index: 999;
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgb(1, 135, 126, 0.9);
+    transition: all 0.5s linear;
+    min-width: 200px;
+    transition: all 0.5s;
+}
+
+.eventHeaderMobie:hover .courseCateListMobie{
+    top: 60%;
+}
+
+.courseCateMobie:hover .courseCateListMobie{
+    max-height: 400px;
+}
+
+.showIconHeader{
+    display: flex;
+}
+
+/* Animation Header */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* search Mobile */
+.searchFormMobile{
+    border: 1px solid var(--colorGlobal);
+    /* border-radius: 5px; */
+    padding: 2px 8px;
+    outline: none;
+    width: 100%;
+
+}
+
+/* Mobie */
+@media screen and (max-width: 46.1875em) {
+    /* Menu mobie */
+    ul.menuHeader {
+        display: none;
+    }
+    .menuMobie {
+        display: block;
+        padding-left: 5px;
+    }
+    .searchForm{
+        display: none;
+    }
+    .logout{
+        display: none;
+    }
+    
+}
+
+/* Tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .searchForm {
+        margin-left: 10px;
+    }
+    .btnGlobal {
+        padding: 5px;
+    }
+    .courseCateList {
+        top: 55px;
+    }
+    .headerFixed .courseCateList {
+        top: 57px;
+    }
+}

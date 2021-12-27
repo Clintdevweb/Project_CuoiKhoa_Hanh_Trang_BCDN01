@@ -1,0 +1,99 @@
+.page_404 {
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-image: url(../../Assets/Img/imgAbout/sun.png); */
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+}
+
+.page_404 img {
+    /* width: 100%; */
+}
+
+.page404_container{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    position: relative;
+    height: 100%;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content404{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%);
+}
+
+.content_box_404{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%);
+}
+
+.text404 {
+    font-size: 80px;
+    color: var(--colorTPrimary);
+    font-weight: 600;
+    font-family: cursive;
+    text-align: center;
+}
+
+
+.content_box_404 h3 {
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.btnLink_404 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: var(--colorGlobal);
+    font-weight: 500;
+}
+.content_box_404 {
+    /* margin-top: -50px; */
+}
+
+/* Mobie */
+@media screen and (max-width: 46.1875em) {
+    .content404{
+        top: 20%;   
+    }
+    
+    .content_box_404{
+        top: 65%;
+    }
+
+    .content_box_404 h3 {
+        font-size: 30px;
+    }
+    
+    .btnLink_404{
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .page404_container .btnLink_404{
+        padding: 10px 20px;
+    }
+    .content404{
+        top: 20%;   
+    }
+    
+    .content_box_404{
+        top: 70%;
+    }
+
+}

@@ -1,0 +1,254 @@
+.sliderEvent {
+    position: relative;
+    background-image: url(../../Assets/Img/imgSlider/backroundTech.jpg);
+    filter: grayscale(50%);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    filter: grayscale(50%);
+}
+
+.sliderEvent::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../../Assets/Img/imgSlider/high-techbrain.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.timeEvents {
+    position: relative;
+    z-index: 20;
+    padding: 200px 50px;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+}
+
+.timeEvents h4 {
+    font-size: 40px;
+    padding: 10px 0px;
+    font-weight: 600;
+
+}
+
+.timeEvents h6 {
+    font-size: 18px;
+}
+
+.countDownEvent {
+    display: flex;
+}
+
+.events {
+    padding-right: 50px;
+}
+
+.events p {
+    text-align: center;
+    line-height: 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.events p small {
+    font-size: 20px;
+}
+
+.dayEvent {
+    color: #ffbe0b;
+}
+
+.hoursEvent {
+    color: #fb5607;
+}
+
+.minEvent {
+    color: #ff006e;
+}
+
+.secondEvent{
+    color: #8338ec;
+}
+
+/* event Detail */
+.eventDetail{
+    padding: 50px;
+}
+/* img Event */
+.imgEvent{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 10px 0;
+    /* background: url(../../Assets/Img/imgAbout/solutions-hero-royalBlue-bg.svg);
+    background-position: top left; */
+}
+
+.imgEvent .animate1{
+    /* position: relative;
+    width: 500px; */
+}
+.imgEvent .animate{
+    animation: animeSlider 3s linear infinite;
+}
+
+/* info Event */
+.infoEvent h5{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #9f1f56;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.infoEvent h6{
+    font-weight: 500;
+}
+
+.infoEvent p {
+    padding:20px 0;
+}
+
+.imgEvent img{
+    width: 100%;
+    height: 270px;
+    /* max-height: 100%; */
+    /* height: 100%; */
+    object-fit: contain;
+}
+
+.btnJohn{
+    background-color: var(--colorGlobal);
+    margin-bottom: 8px;
+}
+
+.speecher{
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../Assets/Img/imgSlider/lightTech.jpg);
+    
+}
+.speecher::after{
+    content: '';
+    position: absolute;
+    /* z-index: 3; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(124,121,122,0.5) 0%, rgba(111, 183, 241, 0.5)100%);    
+}
+ 
+.speecher > h6,
+.donors > h6{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    /* color: var(--colorWhite); */
+    color: var(--colorSPrimary);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.speecher > h6, 
+.speechDetail{
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardSpeecher{
+    display: flex;
+    flex-direction: column;
+    /* height: 210px; */
+    /* width: 280px; */
+    min-width: 280px;
+    text-transform: uppercase;
+    color: var(--colorWhite);
+    margin-bottom: 15px;
+}
+
+.cardSpeecher h6{
+    padding: 5px 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Donors */
+.donors{
+    padding: 100px 50px;
+}
+
+.itemDonors{
+    text-align: center;
+    padding: 10px;
+}
+
+.itemDonors img{
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    /* width: 290px; */
+    height: 220px;
+    min-height: 220px;
+}
+
+.itemDonors p{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    /* color: var(--colorGlobal); */
+    font-weight: 500;
+}
+
+/* Mobie */
+@media screen and (max-width: 46.1875em) {
+    .infoEvent h5 {    
+        font-size: 25px;       
+    }
+    .itemDonors img{
+        height: 100%;
+    }
+    .donors{
+        padding: 50px;
+    }
+    .donors > h6{
+        font-size: 25px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .itemDonors img{
+        height: 100%;
+        /* width: 300px; */
+    }
+    .donors{
+        padding: 50px;
+    }
+
+}
+
+
+
+/* Animation  */
+@keyframes animeSlider {
+    0% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}

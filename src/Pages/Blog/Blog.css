@@ -1,0 +1,166 @@
+/* Blog Item left */
+.blogCourseContainer{
+    padding: 50px;
+}
+.blogCourseContainer{
+    padding: 20px 50px;
+}
+
+.blogCourseContainer > h6{
+    padding: 20px 0;
+}
+
+.blogCourseContainer h6 i{
+    color: var(--colorTPrimary);
+    padding-right: 10px;
+    font-size: 20px;
+}
+/* Card Blog */
+.cardBlog{   
+    /* padding: 0 50px; */
+}
+.blogItemLeft{
+    padding: 0 30px 0 0;
+}
+.cardBlogContent{
+    display: flex;
+    flex-direction: column;
+    /* min-width: 335px; */
+    /* min-height: 516px; */
+    /* height: 516px; */
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.imgCardBlog{
+    overflow: hidden;
+}
+/* handle hover card */
+.cardBlogContent:hover img{
+    animation: zoomImgBlog 1s forwards;
+}
+
+.cardBlogContent img{
+    object-fit: cover;
+    width: 100%;
+    height: 302px;
+    min-height: 302px;
+}
+
+.cardBlogContent h6{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.timeBlogCourse{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardBlogContent p {
+    padding: 10px 0;
+}
+
+.btnCardBlog{
+    width: 100px;
+}
+.timeBlogCourse span i {
+    color: var(--colorGlobal);
+}
+
+.timeBlogCourse .reviewBlog span{
+    padding-right: 10px;
+}
+
+.timeBlogCourse p span{
+    color: var(--colorTPrimary);
+}
+
+/* Blog Item Right */
+.blogItemRight{
+
+}
+
+.blogRightBox{
+    border: 1px solid #d0d0d0;
+    margin-bottom: 30px;
+    border-top: 3px solid var(--colorGlobal);
+}
+
+.blogRightBox > h6{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.blogRightBox ul li {
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.blogRightBox ul li a {
+    color: var(--colorTextCard); 
+    transition: all 0.5s;   
+}
+
+.blogRightBox ul li:hover a {
+    display: inline-block;
+    transform: translateY(-2px);
+    color: var(--colorGlobal);
+    cursor: default; 
+}
+
+/* Post Blog */
+.postBlog{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.postBlog img{
+    width: 100%;
+}
+.postBlog .imgPost img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.postBlog > img,
+.postBlog h6,
+.postBlog p {
+    padding-bottom: 10px;
+}
+
+/* Mobie */
+@media screen and (max-width: 46.1875em) {
+    .blogItemLeft {
+        padding: 0;
+    }
+    .cardBlogContent img {     
+        object-fit: fill;
+    }
+    .timeBlogCourse {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+/* Animation card hover img */
+@keyframes zoomImgBlog {
+    0%{
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    100%{
+        transform: scale(1.05);
+        filter: brightness(0.7);
+
+    }
+}
+

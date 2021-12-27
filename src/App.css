@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+:root {
+  --colorGlobal: #41b294;
+  --colorFPrimary: #4caf50;
+  --colorSPrimary: #f6ba35;
+  --colorTPrimary: #ed85ab;
+  --colorPLight: #80e27e;
+  --colorPDark: #087f23;
+  --colorWhite: #ffffff;
+  --colorText: #252525;
+  --colorTextCard: #8c8c8c;
+  --colorbg: #f0f8ff;
+  --colorbgCourseDetail: #dcdcdc24;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--colorText);
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body::-webkit-scrollbar{
+  width: 0!important;
+  display: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Btn global */
+.btnGlobal {
+  color: var(--colorWhite);
+  padding: 5px 10px;
+  background-color: var(--colorSPrimary);
+  border: none;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.btnGlobal a {
+  color: var(--colorWhite);
+}
+.btnGlobal:hover {
+  transform: scale(0.97);
+}
+/* Card Global style First*/
+.cardGlobal {
+  position: relative;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
+  transition: all 0.5s;
+  width: 280px;
+  /* width: 100%; */
+  min-width: 280px;
+  min-height: 370px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 20%);
+}
+
+.cardGlobal > img {
+  height: 185px;
+  min-height: 185px;
+}
+
+.cardEffect {
+  transition: all 0.5s;
+}
+.cardEffect:hover {
+  transform: translateY(-2px);
+}
+
+.cardImgGlobal {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.cardBodyGlobal {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 20px;
+}
+
+.cardGlobal .cardBodyGlobal h6 {
+  padding: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.stikerCard {
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  top: 174px;
+  padding: 0 10px;
+  color: var(--colorWhite);
+  background-color: var(--colorGlobal);
+  /* transform: translateY(20%); */
+}
+
+.titleMaker {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.titleMaker span.colorCardTitle {
+  color: var(--colorTextCard);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgCardFooter {
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+  border: 1px solid;
+  border-color: var(--colorSPrimary) transparent var(--colorSPrimary) transparent;
+  border-radius: 50%;
 }
+
+.imgCardFooter img {
+  width: 100%;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.cardFooter p:nth-of-type(1) {
+  text-decoration-line: line-through;
+}
+
+.cardFooter p:nth-of-type(2) {
+  font-weight: 500;
+  color: var(--colorGlobal);
+}
+
+.cardFooter p:nth-of-type(1),
+.cardFooter span:nth-of-type(2) {
+  font-size: 12px;
+  color: var(--colorTextCard);
+}
+
+.textStar {
+  color: var(--colorSPrimary);
+}
+
+.colorCardTitle {
+  color: var(--colorTextCard);
+}
+
+
